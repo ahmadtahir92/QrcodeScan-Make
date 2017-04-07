@@ -54,13 +54,13 @@
             ATScanningQRCodeVC *scanningQRCodeVC = [[ATScanningQRCodeVC alloc] init];
             [self.navigationController pushViewController:scanningQRCodeVC animated:YES];
         } else if (status == AVAuthorizationStatusDenied) { // The user rejects the current application to access the camera
-            ATAlertView *alertView = [ATAlertView alertViewWithTitle:@"⚠️ Warning" delegate:nil contentTitle:@"Please go-> [Settings - Privacy - Camera - SGQRCodeExample] Open the access switch" alertViewBottomViewType:(ATAlertViewBottomViewTypeOne)];
+            ATAlertView *alertView = [ATAlertView alertViewWithTitle:@"Warning" delegate:nil contentTitle:@"Please go-> [Settings - Privacy - Camera - ATQRCodeExample] Open the access switch" alertViewBottomViewType:(ATAlertViewBottomViewTypeOne)];
             [alertView show];
         } else if (status == AVAuthorizationStatusRestricted) {
             NSLog(@"The album can not be accessed for system reasons");
         }
     } else {
-        ATAlertView *alertView = [ATAlertView alertViewWithTitle:@"⚠️ Warning" delegate:nil contentTitle:@"Did not detect your camera, please test it on a real machine" alertViewBottomViewType:(ATAlertViewBottomViewTypeOne)];
+        ATAlertView *alertView = [ATAlertView alertViewWithTitle:@"Warning" delegate:nil contentTitle:@"Did not detect your camera, please test it on a real machine" alertViewBottomViewType:(ATAlertViewBottomViewTypeOne)];
         [alertView show];
     }
 

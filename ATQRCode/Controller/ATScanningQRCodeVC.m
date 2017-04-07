@@ -94,7 +94,7 @@
 
         } else if (status == PHAuthorizationStatusDenied) {
             
-            ATAlertView *alertView = [ATAlertView alertViewWithTitle:@"⚠️ Warning" delegate:nil contentTitle:@"Go to -> [Settings - Privacy - Photo - SGQRCodeExample] to open the access switch" alertViewBottomViewType:(ATAlertViewBottomViewTypeOne)];
+            ATAlertView *alertView = [ATAlertView alertViewWithTitle:@"Warning" delegate:nil contentTitle:@"Go to -> [Settings - Privacy - Photo - ATQRCodeExample] to open the access switch" alertViewBottomViewType:(ATAlertViewBottomViewTypeOne)];
             [alertView show];
             
         } else if (status == PHAuthorizationStatusRestricted) {
@@ -102,7 +102,7 @@
         }
         
     } else {
-        ATAlertView *alertView = [ATAlertView alertViewWithTitle:@"⚠️ Warning" delegate:nil contentTitle:@"Did not detect your camera, please test it on a real machine" alertViewBottomViewType:(ATAlertViewBottomViewTypeOne)];
+        ATAlertView *alertView = [ATAlertView alertViewWithTitle:@"Warning" delegate:nil contentTitle:@"Did not detect your camera, please test it on a real machine" alertViewBottomViewType:(ATAlertViewBottomViewTypeOne)];
         [alertView show];
     }
 }

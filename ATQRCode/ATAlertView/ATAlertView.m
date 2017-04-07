@@ -11,19 +11,13 @@
 #define AT_lineColor [UIColor colorWithRed:200 / 255.0 green:200 / 255.0 blue:200 / 255.0 alpha:1.0]
 @interface ATAlertView ()
 
-/** Cover */
 @property (nonatomic, strong) UIButton *coverView;
-/** background View */
 @property (nonatomic, strong) UIView *bg_view;
 
-/** Title caption text */
 @property (nonatomic, copy) NSString *messageTitle;
-/** Content prompt text */
 @property (nonatomic, copy) NSString *contentTitle;
 
-/** SGAlertViewBottomViewTypeOne */
 @property (nonatomic, strong) UIView *bottomViewOne;
-/** SGAlertViewBottomViewTypeTwo */
 @property (nonatomic, strong) UIView *bottomViewTwo;
 @property (nonatomic, strong) UIButton *button;
 @property (nonatomic, strong) UIButton *right_button;
@@ -33,15 +27,10 @@
 
 @implementation ATAlertView
 
-/** Animation time*/
 static CGFloat const AT_animateWithDuration = 0.2;
-/** Distance from the X axis */
 static CGFloat const margin_X = 20;
-/** Distance from the Y axis */
 static CGFloat const margin_Y = 20;
-/** Title font size */
 static CGFloat const message_text_fond = 17;
-/** Content font size */
 static CGFloat const content_text_fond = 14;
 
 - (instancetype)initWithTitle:(NSString *)title delegate:(id<ATAlertViewDelegate>)delegate contentTitle:(NSString *)contentTitle alertViewBottomViewType:(ATAlertViewBottomViewType)alertViewBottomViewType {

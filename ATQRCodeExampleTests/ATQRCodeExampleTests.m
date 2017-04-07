@@ -3,11 +3,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface SGQRCodeExampleTests : XCTestCase
+@interface ATQRCodeExampleTests : XCTestCase
 
 @end
 
-@implementation SGQRCodeExampleTests
+@implementation ATQRCodeExampleTests
 
 - (void)setUp {
     [super setUp];

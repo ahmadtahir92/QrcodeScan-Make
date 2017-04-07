@@ -1,6 +1,4 @@
-//
-//  SGQRCodeExampleUITests.m
-//  SGQRCodeExampleUITests
+
 //
 //  Created by apple on 16/8/27.
 //  Copyright © 2016年 Sorgle. All rights reserved.
@@ -8,11 +6,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface SGQRCodeExampleUITests : XCTestCase
+@interface ATQRCodeExampleUITests : XCTestCase
 
 @end
 
-@implementation SGQRCodeExampleUITests
+@implementation ATQRCodeExampleUITests
 
 - (void)setUp {
     [super setUp];
